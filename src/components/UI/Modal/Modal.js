@@ -1,12 +1,9 @@
-import React, {Fragment, useEffect} from 'react';
+import React, {Fragment} from 'react';
 
 import classes from './Modal.css';
 import Backdrop from '../Backdrop/Backdrop'
 
 const modal = (props) => {
-    useEffect(() => {
-        console.log('[modal] useEffect()');
-    })
 
     return (
         <Fragment>

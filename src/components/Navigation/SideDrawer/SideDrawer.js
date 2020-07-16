@@ -12,15 +12,15 @@ const sideDrawer = (props) => {
     }
     return (
         <Fragment>
-        <Backdrop show={props.open} clicked={props.closed}/>
-        <div className={attachedClasses.join(' ')}>
-            <div className={classes.Logo}>
-                <Logo />
+            <Backdrop show={props.open} clicked={props.closed}/>
+            <div className={attachedClasses.join(' ')} onClick={props.closed}>
+                <div className={classes.Logo}>
+                    <Logo />
+                </div>
+                <nav>
+                    <NavigationItems isAuthentication={props.isAuth}/>
+                </nav>
             </div>
-            <nav>
-                <NavigationItems isAuthentication={props.isAuth}/>
-            </nav>
-        </div>
         </Fragment>
     );
 } 
